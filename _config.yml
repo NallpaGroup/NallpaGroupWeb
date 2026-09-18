@@ -1,2 +1,7 @@
 title: Nallpa Group
-description: Nallpa Group
+description: Suministro técnico para hidrocarburos en Venezuela.
+lang: es
+encoding: utf-8
+markdown: kramdown
+plugins: []
+exclude: []

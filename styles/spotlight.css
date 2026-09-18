@@ -1,0 +1,213 @@
+/*
+  Nallpa silver spotlight system
+  ---------------------------------
+  Progressive enhancement only. The underlying Nallpa colors, typography,
+  imagery, copy, spacing, and responsive structure remain unchanged.
+
+  Enhancements:
+  1) headings: metallic silver text reveal beneath the pointer
+  2) buttons: local silver surface highlight beneath the pointer
+  3) page background: soft global silver cursor glow
+
+  Fine-pointer/hover devices only. Disabled for touch/coarse pointers and
+  prefers-reduced-motion.
+*/
+
+:root {
+  --silver-cursor-x: 50vw;
+  --silver-cursor-y: 50vh;
+  --silver-global-size: clamp(260px, 28vw, 460px);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Global page cursor glow                                                     */
+/* -------------------------------------------------------------------------- */
+
+.silver-cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2147483000;
+  width: var(--silver-global-size);
+  height: var(--silver-global-size);
+  border-radius: 50%;
+  pointer-events: none;
+  user-select: none;
+  opacity: 0;
+  transform: translate3d(
+    calc(var(--silver-cursor-x) - 50%),
+    calc(var(--silver-cursor-y) - 50%),
+    0
+  );
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 255, 255, .17) 0%,
+      rgba(232, 237, 238, .10) 24%,
+      rgba(218, 234, 235, .055) 42%,
+      rgba(156, 177, 178, .02) 58%,
+      transparent 72%
+    );
+  filter: blur(10px);
+  mix-blend-mode: screen;
+  transition: opacity 180ms ease-out;
+  will-change: transform, opacity;
+}
+
+html.has-silver-cursor .silver-cursor-glow {
+  opacity: .78;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Heading text spotlight                                                      */
+/* -------------------------------------------------------------------------- */
+
+.silver-spotlight-text {
+  --spotlight-x: 50%;
+  --spotlight-y: 50%;
+  --spotlight-radius: clamp(110px, 12vw, 180px);
+  position: relative;
+  isolation: isolate;
+}
+
+.silver-spotlight-text .silver-spotlight-base {
+  position: relative;
+  z-index: 0;
+}
+
+.silver-spotlight-text .silver-spotlight-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  user-select: none;
+  color: transparent;
+  background:
+    linear-gradient(
+      105deg,
+      #596164 0%,
+      #aeb4b6 16%,
+      #f7f8f8 34%,
+      #ffffff 44%,
+      #9da5a8 57%,
+      #eef0f0 72%,
+      #697174 100%
+    );
+  background-size: 220% 100%;
+  background-position: var(--spotlight-bg-x, 50%) center;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  mask-image: radial-gradient(
+    circle var(--spotlight-radius) at var(--spotlight-x) var(--spotlight-y),
+    #000 0%,
+    rgba(0, 0, 0, .98) 24%,
+    rgba(0, 0, 0, .82) 44%,
+    rgba(0, 0, 0, .34) 62%,
+    transparent 76%
+  );
+  -webkit-mask-image: radial-gradient(
+    circle var(--spotlight-radius) at var(--spotlight-x) var(--spotlight-y),
+    #000 0%,
+    rgba(0, 0, 0, .98) 24%,
+    rgba(0, 0, 0, .82) 44%,
+    rgba(0, 0, 0, .34) 62%,
+    transparent 76%
+  );
+  filter: drop-shadow(0 0 7px rgba(218, 234, 235, .14));
+  transition: opacity 160ms ease-out;
+  will-change: opacity, mask-image, -webkit-mask-image, background-position;
+}
+
+.silver-spotlight-text.is-spotlight-active .silver-spotlight-overlay {
+  opacity: .96;
+}
+
+/* Smaller headings use a tighter light pool. */
+h3.silver-spotlight-text,
+.footer-col h3.silver-spotlight-text,
+.footer-news h3.silver-spotlight-text {
+  --spotlight-radius: clamp(70px, 8vw, 110px);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Button spotlight                                                            */
+/* -------------------------------------------------------------------------- */
+
+.silver-spotlight-button {
+  --button-spotlight-x: 50%;
+  --button-spotlight-y: 50%;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+.silver-spotlight-button::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  z-index: 2;
+  pointer-events: none;
+  border-radius: inherit;
+  opacity: 0;
+  background:
+    radial-gradient(
+      circle 92px at var(--button-spotlight-x) var(--button-spotlight-y),
+      rgba(255, 255, 255, .58) 0%,
+      rgba(241, 244, 245, .30) 24%,
+      rgba(218, 234, 235, .14) 46%,
+      rgba(156, 177, 178, .055) 62%,
+      transparent 76%
+    );
+  mix-blend-mode: screen;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .10);
+  transition: opacity 150ms ease-out;
+  will-change: opacity, background-position;
+}
+
+.silver-spotlight-button.is-spotlight-active::before {
+  opacity: .9;
+}
+
+/* Arrow/icon controls get a tighter pool. */
+.btn-icon.silver-spotlight-button::before {
+  background:
+    radial-gradient(
+      circle 48px at var(--button-spotlight-x) var(--button-spotlight-y),
+      rgba(255, 255, 255, .62) 0%,
+      rgba(218, 234, 235, .18) 45%,
+      transparent 76%
+    );
+}
+
+/* -------------------------------------------------------------------------- */
+/* Responsive / accessibility                                                  */
+/* -------------------------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+  :root {
+    --silver-global-size: clamp(240px, 36vw, 380px);
+  }
+}
+
+/* The effect is cursor-driven. Touch/coarse-pointer devices keep base design. */
+@media (hover: none), (pointer: coarse) {
+  .silver-cursor-glow,
+  .silver-spotlight-text .silver-spotlight-overlay,
+  .silver-spotlight-button::before {
+    display: none;
+  }
+}
+
+/* Respect motion/accessibility preferences. */
+@media (prefers-reduced-motion: reduce) {
+  .silver-cursor-glow,
+  .silver-spotlight-text .silver-spotlight-overlay,
+  .silver-spotlight-button::before {
+    display: none;
+  }
+}

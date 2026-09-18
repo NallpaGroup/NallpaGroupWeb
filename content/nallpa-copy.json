@@ -1,0 +1,187 @@
+{
+  "company": {
+    "name": "Nallpa Group",
+    "short_name": "Nallpa",
+    "email": "marketing@nallpagroup.com",
+    "phone": "+58 412-6235701",
+    "location": "7311 NW 12th Street, Suite 20, Miami, FL 33126"
+  },
+  "seo": {
+    "title": "Nallpa Group | Suministro técnico para hidrocarburos",
+    "meta_description": "Nallpa Group integra química de especialidad, materiales y soluciones técnicas para operaciones petroleras en Venezuela, con trazabilidad y respaldo técnico.",
+    "og_title": "Nallpa Group | Tecnología para el pozo venezolano",
+    "og_description": "Química de especialidad, materiales y soluciones técnicas para hidrocarburos, respaldadas por fabricantes globales, trazabilidad y soporte técnico.",
+    "twitter_title": "Nallpa Group | Tecnología para el pozo venezolano",
+    "twitter_description": "Suministro técnico de química, materiales y soluciones para operaciones de hidrocarburos en Venezuela."
+  },
+  "navigation": {
+    "home": "Inicio",
+    "about": "Nosotros",
+    "pages": "Páginas",
+    "services": "Soluciones",
+    "process": "Proceso",
+    "testimonials": "Experiencias",
+    "contact_cta": "Hablar con el equipo"
+  },
+  "hero": {
+    "headline": "Tecnología global para el pozo venezolano",
+    "description": "Integramos química de especialidad, materiales y soluciones técnicas para hidrocarburos, con trazabilidad, continuidad de suministro y respaldo técnico.",
+    "primary_cta": "Hablar con el equipo",
+    "secondary_cta": "Explorar soluciones"
+  },
+  "partner_logos": {
+    "intro_text": "Representación y aliado técnico en Venezuela",
+    "partner_1_name": "CARBO Ceramics"
+  },
+  "services": {
+    "section_number": "01",
+    "headline": "Soluciones para cada etapa del pozo",
+    "items": [
+      {
+        "title": "Cementación",
+        "description": "Química de especialidad para control de pérdida de fluido, dispersión, migración de gas, retardación y acondicionamiento de lechadas.",
+        "cta": "Ver aplicación"
+      },
+      {
+        "title": "Perforación",
+        "description": "Aditivos para control de filtrado, viscosidad, estabilidad de lutitas y control microbiológico en sistemas de fluidos de perforación.",
+        "cta": "Ver aplicación"
+      },
+      {
+        "title": "Producción",
+        "description": "Especialidades para separación de agua y crudo, control de corrosión, parafinas, incrustaciones, H₂S e hidratos.",
+        "cta": "Ver aplicación"
+      },
+      {
+        "title": "Rehabilitación y estimulación",
+        "description": "Soluciones para limpieza, control de hierro, remoción de incrustaciones y acondicionamiento de pozos durante intervenciones de recuperación.",
+        "cta": "Ver aplicación"
+      },
+      {
+        "title": "Apuntalantes y gravel pack",
+        "description": "Apuntalantes cerámicos para fracturamiento hidráulico y empaque con grava, orientados a sostener conductividad y control de arena.",
+        "cta": "Ver materiales"
+      },
+      {
+        "title": "Confiabilidad mecánica",
+        "description": "Rodamientos y soluciones para la confiabilidad de activos rotativos mediante la representación y distribución de tecnología SKF.",
+        "cta": "Ver soluciones"
+      }
+    ],
+    "bottom_primary_cta": "Hablar con el equipo",
+    "bottom_secondary_cta": "Conocer Nallpa"
+  },
+  "intro_content": {
+    "paragraph_1": "La continuidad operacional depende de tener el producto correcto, con especificación verificable y disponible cuando la operación lo requiere.",
+    "paragraph_2": "Nallpa conecta tecnología desarrollada para entornos exigentes con las necesidades técnicas, logísticas y regulatorias de la industria venezolana."
+  },
+  "about": {
+    "section_number": "02",
+    "headline": "Suministro técnico con respaldo",
+    "description": "Nallpa Group distribuye química de especialidad, materiales y maquinaria para hidrocarburos, agro y minería, con foco operativo en la industria petrolera venezolana.",
+    "primary_cta": "Conocer Nallpa",
+    "secondary_cta": "Hablar con el equipo"
+  },
+  "quality": {
+    "section_number": "03",
+    "headline": "Trazabilidad, cumplimiento y respaldo técnico",
+    "description": "Cada suministro se apoya en relaciones directas con fabricantes, cadena logística internacional, cumplimiento normativo y soporte de ingeniería y laboratorio.",
+    "stat_1": {
+      "number": "4",
+      "label": "Etapas principales del pozo atendidas"
+    },
+    "stat_2": {
+      "number": "[NEEDS COMPANY INPUT: estadística operativa verificable]",
+      "label": "[NEEDS COMPANY INPUT: sugerido, entregas, disponibilidad, inventario, capacidad logística o indicador de continuidad]"
+    },
+    "cta": "Conocer nuestro enfoque"
+  },
+  "newsletter": {
+    "headline": "Perspectiva técnica para la operación",
+    "description": "Recibe contenidos sobre aplicaciones, productos, integridad del pozo y tendencias relevantes para la industria.",
+    "email_placeholder": "Correo corporativo",
+    "success_message": "Gracias. Tu suscripción fue registrada.",
+    "error_message": "No pudimos registrar tu correo. Intenta nuevamente."
+  },
+  "process": {
+    "section_number": "05",
+    "headline": "Del requerimiento técnico a la operación",
+    "description": "Nuestro enfoque conecta la necesidad de campo con la solución técnica, el suministro y el respaldo requerido para su implementación.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Definir requerimiento",
+        "description": "Identificamos la aplicación, las condiciones operativas y las especificaciones necesarias para orientar la solución."
+      },
+      {
+        "number": "02",
+        "title": "Coordinar suministro",
+        "description": "Gestionamos producto, documentación y logística dentro de una cadena de suministro trazable y conforme."
+      },
+      {
+        "number": "03",
+        "title": "Entregar con respaldo",
+        "description": "Acompañamos la entrega con documentación técnica y acceso al soporte de ingeniería y laboratorio correspondiente."
+      }
+    ]
+  },
+  "testimonials": {
+    "section_number": "06",
+    "headline": "La experiencia del cliente",
+    "description": "Referencias de clientes y contrapartes operativas, publicadas únicamente con autorización previa.",
+    "items": [
+      {
+        "headline": "[NEEDS CLIENT TESTIMONIAL]",
+        "quote": "[NEEDS CLIENT TESTIMONIAL]",
+        "attribution": "[NEEDS CLIENT ATTRIBUTION]"
+      },
+      {
+        "headline": "[NEEDS CLIENT TESTIMONIAL]",
+        "quote": "[NEEDS CLIENT TESTIMONIAL]",
+        "attribution": "[NEEDS CLIENT ATTRIBUTION]"
+      },
+      {
+        "headline": "[NEEDS CLIENT TESTIMONIAL]",
+        "quote": "[NEEDS CLIENT TESTIMONIAL]",
+        "attribution": "[NEEDS CLIENT ATTRIBUTION]"
+      },
+      {
+        "headline": "[NEEDS CLIENT TESTIMONIAL]",
+        "quote": "[NEEDS CLIENT TESTIMONIAL]",
+        "attribution": "[NEEDS CLIENT ATTRIBUTION]"
+      }
+    ]
+  },
+  "final_cta": {
+    "headline": "Conversemos sobre su próxima operación",
+    "primary_cta": "Enviar correo",
+    "primary_href": "mailto:marketing@nallpagroup.com",
+    "secondary_cta": "+58 412-6235701",
+    "secondary_href": "https://wa.me/584126235701"
+  },
+  "footer": {
+    "company_description": "Distribuidor y proveedor técnico de química de especialidad, materiales y soluciones para hidrocarburos, agro y minería.",
+    "main_pages_title": "Páginas principales",
+    "main_pages": {
+      "home": "Inicio",
+      "about": "Nosotros",
+      "services": "Soluciones",
+      "contact": "Contacto"
+    },
+    "newsletter_headline": "Información técnica de Nallpa",
+    "newsletter_description": "Recibe contenidos sobre aplicaciones, productos y operación en la industria.",
+    "newsletter_success": "Gracias. Tu suscripción fue registrada.",
+    "newsletter_error": "No pudimos registrar tu correo. Intenta nuevamente.",
+    "email": "marketing@nallpagroup.com",
+    "copyright": "© 2026 Nallpa Group. Todos los derechos reservados.",
+    "phone": "+58 412-6235701",
+    "whatsapp": "https://wa.me/584126235701"
+  },
+  "accessibility": {
+    "hero_image_alt": "Paisaje de tepuyes en Venezuela",
+    "about_main_image_alt": "Complejo industrial iluminado durante la noche",
+    "about_secondary_image_alt": "Bomba de extracción de petróleo en campo",
+    "quality_image_alt": "Plataforma petrolera costa afuera",
+    "process_image_alt": "Infraestructura de procesamiento industrial con tuberías y torre"
+  }
+}

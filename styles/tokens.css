@@ -1,0 +1,82 @@
+:root {
+  --brand-primary: #165159;
+  --brand-primary-hover: #13464D;
+  --brand-primary-active: #113E45;
+  --brand-secondary: #9CB1B2;
+  --brand-secondary-hover: #93AAAB;
+  --brand-support-light: #DAEAEB;
+  --brand-charcoal: #222B2B;
+
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F2F8F8;
+  --bg-dark: #222B2B;
+  --surface-primary: #FFFFFF;
+  --surface-secondary: #DAEAEB;
+
+  --text-primary: #222B2B;
+  --text-secondary: #165159;
+  --text-muted: #596465;
+  --text-inverse: #FFFFFF;
+  --text-inverse-muted: #DAEAEB;
+
+  --border-primary: #9CB1B2;
+  --border-subtle: #DAEAEB;
+  --border-inverse: rgba(218, 234, 235, .22);
+  --focus-ring: #165159;
+  --focus-ring-inverse: #DAEAEB;
+  --success: #2E7D32;
+  --error: #B42318;
+  --warning: #A15C00;
+  --overlay-hero: rgba(34, 43, 43, .62);
+
+  /* Compatibility with the original template token names. */
+  --orange: var(--brand-primary);
+  --orange-hover: var(--brand-primary-hover);
+  --neutral-800: #222B2B;
+  --neutral-700: #3E4848;
+  --neutral-600: #596465;
+  --neutral-500: #687474;
+  --neutral-400: #9CB1B2;
+  --neutral-300: #BBCECE;
+  --neutral-200: #DAEAEB;
+  --neutral-100: #F2F8F8;
+
+  --page-max: 1268px;
+  --gutter: 28px;
+  --radius-pill: 999px;
+  --radius-ui: 12px;
+  --radius-card: 14px;
+  --radius-panel: 16px;
+  --ease: cubic-bezier(.2,.7,.2,1);
+  --section-y: 136px;
+  --font-sans: "DM Sans", Arial, Helvetica, sans-serif;
+  --display-11: clamp(54px, 5vw, 72px);
+  --display-10: clamp(46px, 4.2vw, 60px);
+  --display-9: clamp(40px, 3.55vw, 48px);
+  --display-8: clamp(32px, 2.8vw, 36px);
+  --display-7: 30px;
+  --display-6: 24px;
+  --body-lg: 20px;
+  --body: 18px;
+  --body-sm: 16px;
+  --shadow-soft: 0 20px 65px rgba(34, 43, 43, .10);
+}
+
+@media (min-width: 992px) and (max-width: 1599px) {
+  :root {
+    --section-y: 148px;
+    --display-11: clamp(59px, 5.5vw, 79px);
+    --display-10: clamp(51px, 4.6vw, 66px);
+    --display-9: clamp(44px, 3.9vw, 53px);
+    --display-8: clamp(35px, 3.05vw, 40px);
+    --display-7: 33px;
+    --display-6: 26px;
+    --body-lg: 22px;
+    --body: 19px;
+    --body-sm: 17px;
+  }
+}
+
+@media (max-width: 991px) { :root { --gutter: 24px; --section-y: 104px; } }
+@media (max-width: 767px) { :root { --gutter: 20px; --section-y: 82px; } }
+@media (max-width: 479px) { :root { --gutter: 18px; --section-y: 72px; } }

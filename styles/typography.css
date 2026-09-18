@@ -1,0 +1,11 @@
+/*
+  Nallpa / DM Sans integration.
+  Copy the authorized original font files into /public/assets/fonts/ using these exact filenames.
+  The project intentionally does not redistribute font binaries.
+*/
+@font-face { font-family: "DM Sans"; src: url("/assets/fonts/DMSans-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "DM Sans"; src: url("/assets/fonts/DMSans-Italic.ttf") format("truetype"); font-weight: 400; font-style: italic; font-display: swap; }
+@font-face { font-family: "DM Sans"; src: url("/assets/fonts/DMSans-Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "DM Sans"; src: url("/assets/fonts/DMSans-MediumItalic.ttf") format("truetype"); font-weight: 500; font-style: italic; font-display: swap; }
+@font-face { font-family: "DM Sans"; src: url("/assets/fonts/DMSans-Bold.ttf") format("truetype"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "DM Sans"; src: url("/assets/fonts/DMSans-BoldItalic.ttf") format("truetype"); font-weight: 700; font-style: italic; font-display: swap; }
