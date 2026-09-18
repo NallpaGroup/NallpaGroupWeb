@@ -1,4 +1,4 @@
-.btn { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; gap: 12px; padding: 12px 22px; border: 1px solid transparent; border-radius: var(--radius-ui); cursor: pointer; font-size: 15px; font-weight: 700; letter-spacing: .01em; line-height: 1; transition: transform .2s var(--ease), background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease); }
+.btn { display: inline-flex; min-height: 50px; align-items: center; justify-content: center; gap: 12px; padding: 12px 22px; border: 1px solid transparent; border-radius: var(--radius-ui); cursor: pointer; font-size: 15px; font-weight: 700; letter-spacing: -0.005em; line-height: 1; transition: transform .2s var(--ease), background .2s var(--ease), color .2s var(--ease), border-color .2s var(--ease); }
 .btn::after { content: "→"; font-size: 17px; line-height: 1; transition: transform .2s var(--ease); }
 .btn:hover::after { transform: translateX(3px); }
 .btn:hover { transform: translateY(-1px); }
@@ -100,6 +100,7 @@ html.has-silver-cursor .site-header.is-scrolled::after { opacity: .48; }
   background: transparent;
   font-size: 13px;
   font-weight: 500;
+  letter-spacing: -0.008em;
   white-space: nowrap;
   transition: color .25s var(--ease), opacity .25s var(--ease);
 }
@@ -180,7 +181,7 @@ html.has-silver-cursor .site-header.is-scrolled::after { opacity: .48; }
   cursor: pointer;
   font-size: 10.5px;
   font-weight: 700;
-  letter-spacing: .06em;
+  letter-spacing: .025em;
   transition: background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease), transform .2s var(--ease);
 }
 .language-toggle:hover { background: rgba(218,234,235,.64); border-color: rgba(22,81,89,.28); transform: translateY(-1px); }
