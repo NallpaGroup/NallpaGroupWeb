@@ -11,8 +11,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 button:focus-visible, a:focus-visible, input:focus-visible { outline: 2px solid var(--focus-ring); outline-offset: 3px; }
 .hero button:focus-visible, .hero a:focus-visible, .quality button:focus-visible, .quality a:focus-visible, .newsletter-band button:focus-visible, .newsletter-band a:focus-visible, .final-cta button:focus-visible, .final-cta a:focus-visible, .site-footer button:focus-visible, .site-footer a:focus-visible, .mobile-menu button:focus-visible, .mobile-menu a:focus-visible { outline-color: var(--focus-ring-inverse); }
 h1, h2, h3, p { margin-top: 0; }
-h1, h2 { letter-spacing: -.025em; font-weight: 700; }
-h3 { letter-spacing: -.012em; font-weight: 700; }
+h1, h2 { letter-spacing: -.04em; font-weight: 700; }
+h3 { letter-spacing: -.026em; font-weight: 700; }
 p { color: var(--text-muted); }
 .container { width: min(calc(100% - (var(--gutter) * 2)), var(--page-max)); margin-inline: auto; }
 .section { position: relative; padding-block: var(--section-y); }
