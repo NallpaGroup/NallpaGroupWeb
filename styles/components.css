@@ -252,8 +252,25 @@ html[lang="es"] .lang-es, html[lang="en"] .lang-en { opacity: 1; }
     justify-self: start;
     width: 124px;
   }
-  .brand-logo { height: 29px; max-width: 124px; }
-  .brand-logo-mark { height: 27px; max-width: 36px; }
+  .brand-logo {
+    left: 0;
+    height: 29px;
+    max-width: 124px;
+    transform: translateY(-50%);
+  }
+  .brand-logo-mark {
+    height: 27px;
+    max-width: 36px;
+    transform: translateY(-50%) scale(.74) rotate(-4deg);
+  }
+  .site-header.is-scrolled .brand-logo-full {
+    transform: translateY(-50%) scale(.84);
+    transform-origin: left center;
+  }
+  .site-header.is-scrolled .brand-logo-mark {
+    transform: translateY(-50%) scale(1) rotate(0deg);
+    transform-origin: left center;
+  }
   .header-actions { grid-column: 3; justify-self: end; }
   .language-toggle { min-height: 32px; padding-inline: 8px; font-size: 9.5px; }
   .mobile-menu-toggle { width: 32px; height: 32px; }
