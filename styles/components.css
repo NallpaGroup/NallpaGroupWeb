@@ -242,10 +242,19 @@ html[lang="es"] .lang-es, html[lang="en"] .lang-en { opacity: 1; }
 }
 @media (max-width: 479px) {
   .site-header, .site-header.is-scrolled { width: calc(100% - 14px); top: 7px; }
-  .header-inner, .site-header.is-scrolled .header-inner { height: 56px; padding-inline: 9px; }
-  .brand { width: 124px; }
+  .header-inner, .site-header.is-scrolled .header-inner {
+    height: 56px;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    padding-inline: 9px;
+  }
+  .brand {
+    grid-column: 1;
+    justify-self: start;
+    width: 124px;
+  }
   .brand-logo { height: 29px; max-width: 124px; }
   .brand-logo-mark { height: 27px; max-width: 36px; }
+  .header-actions { grid-column: 3; justify-self: end; }
   .language-toggle { min-height: 32px; padding-inline: 8px; font-size: 9.5px; }
   .mobile-menu-toggle { width: 32px; height: 32px; }
 }
