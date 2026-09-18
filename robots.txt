@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nallpagroup.github.io/NallpaGroupWeb/sitemap.xml
+Sitemap: https://nallpagroup.com/sitemap.xml
